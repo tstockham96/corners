@@ -1,0 +1,30 @@
+{
+  "name": "corners",
+  "version": "1.0.0",
+  "description": "CORNERS: a daily logic puzzle. Give every row and column its number of dots; no four dots may form a rectangle.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --mode single",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "e2e": "node scripts/play.mjs",
+    "precompute": "tsx scripts/precompute.ts",
+    "merge": "tsx scripts/merge.ts",
+    "report": "tsx scripts/report.ts",
+    "trace": "tsx scripts/trace.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "playwright-core": "^1.63.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0"
+  }
+}
